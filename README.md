@@ -4,9 +4,7 @@ An R script that helps uniform gene symbols of different single-cell RNA sequenc
 Welcome to use Gene Symbol Uniform R toolkit!
 
 # Steps
-0. Please ensure that the dependencies are properly installed: Seurat (3.2), stringr (1.4.0), dplyr (0.8.5). The number in parentheses are recomended version.  
-For current version, the dplyr should be lower than 1.0.1 (not included).  
-  
+0. Please ensure that the dependencies are properly installed: Seurat, stringr, dplyr. The number in parentheses are recomended version.    
   
 1. According to the limitation of github, please unzip "GeneSymbolRef_SelectAll_upd0731.csv.zip" first. Keep the names of other files in this folder unchanged.  
   
