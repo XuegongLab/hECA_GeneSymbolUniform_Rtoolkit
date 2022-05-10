@@ -12,10 +12,10 @@ Welcome to use Gene Symbol Uniform R toolkit!
 `cd path_to_this_dir`  
   
     Then execute the following command:  
-`Rscript RToolkit_GeneSymbolUniform.R [query_path] [output_dir]`  
+`Rscript Rtoolkit_GeneSymbolUniform.R [query_path] [output_dir]`  
   
     where:  
-    query_path: The absolute path of query dataset to be processed (txt).    
+    query_path: The absolute path of query dataset to be processed (txt or csv).    
     output_dir: The absolute path to receive output files.    
   
 3. There would be some notices if one processing stage is finished.  

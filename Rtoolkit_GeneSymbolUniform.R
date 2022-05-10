@@ -66,7 +66,14 @@ print("=========Loading Query Data=========")
 #   query_data <- as.data.frame(as.matrix(query_obj@assays$RNA@data))
 # }
 
-query_data <- read.csv(query_dir, header=T, row.names=1)
+query_type <- tail(unlist(strsplit(query_dir,".",fixed=T)),1)
+if(query_type=="txt"){
+  query_data <- read.table(query_dir, header=T, row.names=1)
+}elif(query_type=="csv"){
+  query_data <- read.csv(query_dir, header=T, row.names=1)
+}else{
+  stop("Input file should be either txt or csv")
+}
 query_gene_list <- rownames(query_data)
 print("The shape of query data is: ")
 print(dim(query_data))
