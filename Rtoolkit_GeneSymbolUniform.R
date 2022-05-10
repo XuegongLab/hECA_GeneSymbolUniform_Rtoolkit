@@ -69,7 +69,7 @@ print("=========Loading Query Data=========")
 query_type <- tail(unlist(strsplit(query_dir,".",fixed=T)),1)
 if(query_type=="txt"){
   query_data <- read.table(query_dir, header=T, row.names=1)
-}elif(query_type=="csv"){
+}else if(query_type=="csv"){
   query_data <- read.csv(query_dir, header=T, row.names=1)
 }else{
   stop("Input file should be either txt or csv")
